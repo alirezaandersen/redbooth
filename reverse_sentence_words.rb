@@ -10,9 +10,9 @@
 class ReverseSentence
 
 #without using ruby library
-  def self.reverse_sentence_words(string)
-    string.split(/\s+/).map{|w|wl=w.length-1;(0..wl).map{|i|w[wl-i]}.join}.join(' ')
-  end
+  # def self.reverse_sentence_words(string)
+  #   string.split(/\s+/).map{|w|wl=w.length-1;(0..wl).map{|i|w[wl-i]}.join}.join(' ')
+  # end
 
 #using a ruby library
   def self.reverse_sentence_words(string)
