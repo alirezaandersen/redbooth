@@ -1,0 +1,80 @@
+Chat App
+
+Can see all the users
+Can see all the conversations (1:1 and group)
+Can navigate to a conversation (1:1 or group) and see all the messages
+Create a conversation (1:1 or group)
+Send messages in a conversation
+Edit/delete a conversation (membership and name)
+
+Get /group chat
+index - group conversation
+
+Get /single_chats
+	Index - 1 on 1 conversation
+
+Get /conversations
+	index:  all conversations
+[
+{
+Title: “asdasdasd”,
+Id: 132132,
+Members: [1,2,3,45],
+Type: “asd”
+},
+{
+Title: “asdasdasd”,
+Id: 132132,
+Members: [1,2,3,45]
+},
+{
+Title: “asdasdasd”,
+Id: 132132,
+Members: [1,2,3,45]
+},
+{
+Title: “asdasdasd”,
+Id: 132132,
+Members: [1,2,3,45]
+}
+]
+
+
+Get / instant messages
+[
+{ sender: user_id,
+content: “hi”
+Receive Timestamp: 08:08:18
+Send timestamp : 08:08:19
+parent_converstaion_id: 1233
+}
+]
+
+Get /timelaps message(length of messaging is)
+[
+Sender: user_id
+Parent_conversation_id:
+Current_message: [1,23,4,45,5,5,6,]
+Received timestamp:
+Message_cap:
+
+]
+
+
+
+
+
+
+
+{
+ group1 : { {p1: user.id } {, p2: user.id}, group.id }
+
+Single: {{p1: user.id } {, p2: user.id}}
+}
+
+Update / conversation? type= group/single  argument = paragraph
+
+Create conversation
+Read conversation
+Update/ edit conversation
+Delete converstation
