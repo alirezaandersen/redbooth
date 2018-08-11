@@ -52,17 +52,7 @@ class Channels < ActiveRecord::Base
   def add_member(user)
      Message.welcome(user.id, channel_id) unless Membership.create!(user, channel.id)
   end
-
 end
-
-channel = Channels.first
-channel.add_member(User.first)
-# sends a new message to the channel with a welcome
-
-# hi ali
-
-Message.create!(userid, channelid, text: 'hi ali')
-
 
 
 class Messages < ActiveRecord::Base
@@ -71,7 +61,7 @@ class Messages < ActiveRecord::Base
   belongs_to :channel
 
   def welcome(user_id, channel)
-      Message.create!(user_id, channel, id, text: 'welcome #{user.name} to #{channel.name}')
+      update.conversation: 'welcome #{user.name} to #{channel.name}')
 	end
 end
 
