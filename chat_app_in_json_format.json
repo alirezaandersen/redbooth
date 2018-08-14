@@ -60,18 +60,6 @@ Message_cap:
 
 ]
 
-
-
-
-
-
-
-{
- group1 : { {p1: user.id } {, p2: user.id}, group.id }
-
-Single: {{p1: user.id } {, p2: user.id}}
-}
-
 Update / conversation? type= group/single  argument = paragraph
 
 Create conversation
